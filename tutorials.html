@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials - AI Power Tools</title>
+    <meta name="description" content="Learn how to use our AI tools effectively with step-by-step tutorials">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6c63ff;
+            --secondary: #4d44db;
+            --accent: #8b85ff;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --background: #f5f7ff;
+            --text: #2b2d42;
+            --card-bg: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 1.8rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        /* Tutorial Categories */
+        .tutorial-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            background: var(--primary);
+            color: white;
+        }
+        
+        .category-card:hover i {
+            color: white;
+        }
+        
+        .category-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* Tutorial Sections */
+        .tutorial-section {
+            margin: 4rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+        }
+        
+        .tutorial-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .tutorial-section h3 i {
+            margin-right: 15px;
+        }
+        
+        .tutorial-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .tutorial-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .tutorial-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        
+        .tutorial-content h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+        
+        .tutorial-steps {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .tutorial-steps h5 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        
+        .tutorial-steps ol {
+            padding-left: 1.5rem;
+        }
+        
+        .tutorial-steps li {
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .tutorial-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="section-title">
+            <h2>AI Power Tools Tutorials</h2>
+            <p>Learn how to get the most out of our AI tools with these step-by-step guides</p>
+        </div>
+        
+        <!-- Tutorial Categories -->
+        <div class="tutorial-categories">
+            <a href="#tweet-tutorials" class="category-card">
+                <i class="fab fa-twitter"></i>
+                <h3>Tweet Generator</h3>
+            </a>
+            
+            <a href="#linkedin-tutorials" class="category-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn Bio</h3>
+            </a>
+            
+            <a href="#script-tutorials" class="category-card">
+                <i class="fas fa-video"></i>
+                <h3>Video Scripts</h3>
+            </a>
+            
+            <a href="#resume-tutorials" class="category-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Resume Builder</h3>
+            </a>
+        </div>
+        
+        <!-- Tweet Generator Tutorials -->
+        <section id="tweet-tutorials" class="tutorial-section">
+            <h3><i class="fab fa-twitter"></i> Tweet Generator Tutorials</h3>
+            
+            <div class="tutorial-card">
+                <div class="tutorial-video">
+                    <!-- Replace with your actual YouTube embed code -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-content">
+                    <h4>Getting Started with Tweet Generator</h4>
+                    <p>Learn how to create engaging tweets in seconds using our AI tool. This tutorial covers all the basic features.</p>
+                    <div class="tutorial-steps">
+                        <h5>Key Steps:</h5>
+                        <ol>
+                            <li>Enter your topic or idea</li>
+                            <li>Select the appropriate tone</li>
+                            <li>Add relevant keywords</li>
+                            <li>Generate and refine your tweets</li>
+                        </ol>
+                    </div>
+                    <a href="index.html#tweet-generator" class="btn">Try Tweet Generator Now</a>
+                </div>
+            </div>
+            
+            <div class="tutorial-card">
+                <div class="tutorial-video">
+                    <!-- Replace with your actual YouTube embed code -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-content">
+                    <h4>Advanced Tweet Writing Techniques</h4>
+                    <p>Discover how to craft viral tweets using our AI generator with these advanced techniques.</p>
+                    <div class="tutorial-steps">
+                        <h5>Key Steps:</h5>
+                        <ol>
+                            <li>Using power words for engagement</li>
+                            <li>Incorporating trending hashtags</li>
+                            <li>Creating tweet threads</li>
+                            <li>Optimizing for different time zones</li>
+                        </ol>
+                    </div>
+                    <a href="index.html#tweet-generator" class="btn">Try Advanced Features</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- LinkedIn Bio Tutorials -->
+        <section id="linkedin-tutorials" class="tutorial-section">
+            <h3><i class="fab fa-linkedin"></i> LinkedIn Bio Tutorials</h3>
+            
+            <div class="tutorial-card">
+                <div class="tutorial-video">
+                    <!-- Replace with your actual YouTube embed code -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-content">
+                    <h4>Crafting the Perfect LinkedIn Bio</h4>
+                    <p>Step-by-step guide to creating a professional LinkedIn bio that attracts opportunities.</p>
+                    <div class="tutorial-steps">
+                        <h5>Key Steps:</h5>
+                        <ol>
+                            <li>Enter your professional details</li>
+                            <li>Highlight your key skills</li>
+                            <li>Add notable achievements</li>
+                            <li>Generate and customize your bio</li>
+                        </ol>
+                    </div>
+                    <a href="index.html#linkedin-bio" class="btn">Try LinkedIn Bio Creator Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video Script Tutorials -->
+        <section id="script-tutorials" class="tutorial-section">
+            <h3><i class="fas fa-video"></i> Video Script Tutorials</h3>
+            
+            <div class="tutorial-card">
+                <div class="tutorial-video">
+                    <!-- Replace with your actual YouTube embed code -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-content">
+                    <h4>Creating Engaging Video Scripts</h4>
+                    <p>Learn how to generate professional video scripts for YouTube, TikTok, and more.</p>
+                    <div class="tutorial-steps">
+                        <h5>Key Steps:</h5>
+                        <ol>
+                            <li>Define your video topic</li>
+                            <li>Select the video type and duration</li>
+                            <li>Add key points to cover</li>
+                            <li>Generate and edit your script</li>
+                        </ol>
+                    </div>
+                    <a href="index.html#video-script" class="btn">Try Video Script Generator Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Resume Builder Tutorials -->
+        <section id="resume-tutorials" class="tutorial-section">
+            <h3><i class="fas fa-file-alt"></i> Resume Builder Tutorials</h3>
+            
+            <div class="tutorial-card">
+                <div class="tutorial-video">
+                    <!-- Replace with your actual YouTube embed code -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="tutorial-content">
+                    <h4>Building a Job-Winning Resume</h4>
+                    <p>Create resumes that get noticed by recruiters with our AI-powered builder.</p>
+                    <div class="tutorial-steps">
+                        <h5>Key Steps:</h5>
+                        <ol>
+                            <li>Enter your professional information</li>
+                            <li>Add work experience and education</li>
+                            <li>Include relevant skills</li>
+                            <li>Tailor for specific job descriptions</li>
+                        </ol>
+                    </div>
+                    <a href="index.html#resume-builder" class="btn">Try Resume Builder Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

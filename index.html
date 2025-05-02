@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tools Hub - Powerful AI Generators for Content Creation</title>
-    <meta name="description" content="Free AI tools including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot. Boost your productivity with AI.">
+    <title>AI Power Tools - Generate Content with Artificial Intelligence</title>
+    <meta name="description" content="Free AI tools for content creation including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot">
     <meta name="keywords" content="AI tools, tweet generator, LinkedIn bio, video script, resume builder, chatbot, content creation">
-    <meta name="author" content="AI Tools Hub">
+    <meta name="author" content="AI Power Tools">
     
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="AI Tools Hub - Powerful AI Generators for Content Creation">
-    <meta property="og:description" content="Free AI tools including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot.">
+    <meta property="og:title" content="AI Power Tools - Generate Content with Artificial Intelligence">
+    <meta property="og:description" content="Free AI tools for content creation including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourwebsite.com">
     <meta property="og:image" content="https://yourwebsite.com/images/ai-tools-preview.jpg">
@@ -114,27 +114,27 @@
         
         .hero {
             text-align: center;
-            padding: 4rem 0;
+            padding: 5rem 0;
             background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1677442135136-760c813a743f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            margin-bottom: 3rem;
-            border-radius: 10px;
-            margin-top: 2rem;
+            margin: 2rem 0 3rem;
+            border-radius: 15px;
         }
         
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
             color: var(--secondary);
             font-weight: 700;
+            line-height: 1.2;
         }
         
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: #555;
             max-width: 700px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 2.5rem;
         }
         
         .tools-grid {
@@ -146,69 +146,73 @@
         
         .tool-card {
             background: var(--card-bg);
-            border-radius: 10px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
+            border: 1px solid #e0e0e0;
         }
         
         .tool-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
         
         .tool-header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 1.5rem;
+            padding: 1.8rem;
             display: flex;
             align-items: center;
         }
         
         .tool-header i {
-            font-size: 2rem;
-            margin-right: 1rem;
+            font-size: 2.2rem;
+            margin-right: 1.2rem;
         }
         
         .tool-header h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         
         .tool-content {
-            padding: 1.5rem;
+            padding: 1.8rem;
         }
         
         .tool-content p {
             color: #666;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
+            margin-bottom: 1.8rem;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
         
         .btn {
             display: inline-block;
-            padding: 0.8rem 1.5rem;
+            padding: 0.9rem 1.8rem;
             background-color: var(--primary);
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1rem;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
         }
         
         .btn:hover {
             background-color: var(--secondary);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
         }
         
         .btn-outline {
             background: transparent;
             border: 2px solid var(--primary);
             color: var(--primary);
+            box-shadow: none;
         }
         
         .btn-outline:hover {
@@ -218,11 +222,11 @@
         
         .tool-form {
             display: none;
-            padding: 2rem;
+            padding: 2.5rem;
             background: var(--card-bg);
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            margin: 3rem 0;
             animation: fadeIn 0.5s ease;
             border: 1px solid #e0e0e0;
         }
@@ -233,23 +237,24 @@
         }
         
         .form-group {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             font-weight: 600;
             color: var(--text);
+            font-size: 1.1rem;
         }
         
         .form-control {
             width: 100%;
-            padding: 0.8rem;
+            padding: 1rem;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1rem;
-            transition: border 0.3s ease;
+            transition: all 0.3s ease;
         }
         
         .form-control:focus {
@@ -259,52 +264,85 @@
         }
         
         textarea.form-control {
-            min-height: 120px;
+            min-height: 150px;
             resize: vertical;
         }
         
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+        
         .result-container {
-            margin-top: 2rem;
-            padding: 1.5rem;
+            margin-top: 2.5rem;
+            padding: 2rem;
             background-color: #f8f9fa;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary);
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
         }
         
         .result-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
             color: var(--dark);
+            font-weight: 600;
         }
         
         .result-content {
             white-space: pre-wrap;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
         
         /* About Section */
         .about-section {
-            padding: 4rem 0;
+            padding: 5rem 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ee 100%);
-            margin: 3rem 0;
-            border-radius: 10px;
+            margin: 4rem 0;
+            border-radius: 15px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
         }
         
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 4rem;
             align-items: center;
         }
         
         .about-image img {
             width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
         
-        .about-text h2 {
-            font-size: 2.2rem;
+        .about-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
             margin-bottom: 1.5rem;
             color: var(--secondary);
         }
@@ -312,127 +350,292 @@
         .about-text p {
             margin-bottom: 1.5rem;
             color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-item h4 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            font-size: 1.3rem;
+        }
+        
+        .feature-item p {
+            color: #666;
+            font-size: 1rem;
         }
         
         /* Ad Container */
         .ad-container {
-            margin: 2rem 0;
-            padding: 1rem;
+            margin: 3rem 0;
+            padding: 1.5rem;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             text-align: center;
             border: 1px solid #eee;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .ad-container p {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             font-size: 0.9rem;
             color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        /* Chatbot Styles */
-        .chatbot-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 350px;
-            z-index: 1000;
-            display: none;
+        /* Testimonials */
+        .testimonials-section {
+            padding: 5rem 0;
         }
         
-        .chatbot-header {
-            background: var(--primary);
-            color: white;
-            padding: 0.8rem 1rem;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 4rem;
+            color: rgba(108, 99, 255, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            color: #555;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+        
+        .author-info h5 {
+            margin-bottom: 0.2rem;
+            color: var(--secondary);
+        }
+        
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ee 100%);
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: white;
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
         
-        .chatbot-body {
-            background: white;
-            border: 1px solid #ddd;
-            border-top: none;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
+        .faq-question:hover {
+            background: #f9f9f9;
         }
         
-        .chatbot-messages {
-            flex: 1;
-            padding: 1rem;
-            overflow-y: auto;
+        .faq-question i {
+            transition: transform 0.3s ease;
         }
         
-        .chatbot-input {
-            display: flex;
-            padding: 0.8rem;
-            border-top: 1px solid #eee;
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
         }
         
-        .chatbot-input input {
-            flex: 1;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-right: 0.5rem;
+        .faq-item.active .faq-question {
+            background: #f9f9f9;
         }
         
-        .chatbot-btn {
-            background: var(--primary);
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 0 1rem;
-            cursor: pointer;
+            border-radius: 15px;
+            margin: 4rem 0;
         }
         
-        .message {
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 4rem 0 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1.8rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+        
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
             margin-bottom: 1rem;
-            padding: 0.8rem;
-            border-radius: 8px;
-            max-width: 80%;
         }
         
-        .user-message {
-            background: #e3f2fd;
-            margin-left: auto;
-            border-bottom-right-radius: 0;
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
         }
         
-        .bot-message {
-            background: #f1f1f1;
-            margin-right: auto;
-            border-bottom-left-radius: 0;
+        .footer-links a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
         }
         
-        .chatbot-toggle {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--primary);
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
             color: white;
-            width: 60px;
-            height: 60px;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            z-index: 1001;
+            transition: all 0.3s ease;
         }
         
-        .chatbot-toggle i {
-            font-size: 1.5rem;
+        .social-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
         }
         
         /* Responsive styles */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
         @media (max-width: 992px) {
             .about-content {
                 grid-template-columns: 1fr;
@@ -440,10 +643,16 @@
             
             .about-image {
                 order: -1;
+                max-width: 600px;
+                margin: 0 auto 3rem;
             }
             
-            .chatbot-container {
-                width: 300px;
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
             }
         }
         
@@ -461,18 +670,42 @@
                 margin: 0.5rem;
             }
             
+            .hero {
+                padding: 4rem 1rem;
+            }
+            
             .hero h1 {
                 font-size: 2.2rem;
             }
             
-            .tools-grid {
-                grid-template-columns: 1fr;
+            .section-title h2 {
+                font-size: 2rem;
             }
             
-            .chatbot-container {
-                width: 100%;
-                right: 0;
-                bottom: 0;
+            .tool-form {
+                padding: 1.5rem;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 1.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
             }
         }
         
@@ -485,25 +718,14 @@
             display: block;
         }
         
-        /* Animation for results */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        .animated-result {
-            animation: pulse 0.5s ease;
-        }
-        
         /* Loading spinner */
         .spinner {
             display: none;
-            width: 40px;
-            height: 40px;
-            margin: 20px auto;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid var(--primary);
+            width: 50px;
+            height: 50px;
+            margin: 30px auto;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary);
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
@@ -512,32 +734,58 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .breadcrumb span {
+            margin: 0 0.5rem;
+            color: #999;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo">
+                <a href="index.html" class="logo">
                     <i class="fas fa-robot"></i>
-                    <span>AI Tools Hub</span>
-                </div>
+                    <span>AI Power Tools</span>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#tweet-generator">Tweet Generator</a></li>
                     <li><a href="#linkedin-bio">LinkedIn Bio</a></li>
                     <li><a href="#video-script">Video Script</a></li>
                     <li><a href="#resume-builder">Resume Builder</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <main class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>/</span> <span>AI Tools</span>
+        </div>
+        
         <section class="hero">
             <h1>Supercharge Your Content Creation with AI</h1>
-            <p>Generate high-quality tweets, LinkedIn bios, video scripts, and resumes in seconds with our powerful AI tools.</p>
-            <a href="#tweet-generator" class="btn">Get Started</a>
+            <p>Generate high-quality content in seconds with our powerful AI tools designed for professionals and creators</p>
+            <a href="#tweet-generator" class="btn">Explore Tools</a>
         </section>
         
         <!-- AdSense Banner -->
@@ -554,6 +802,11 @@
             </script>
         </div>
         
+        <section class="section-title">
+            <h2>Our AI Tools</h2>
+            <p>Choose from our collection of powerful AI tools to boost your productivity</p>
+        </section>
+        
         <section class="tools-grid">
             <!-- AI Tweet Generator Card -->
             <div class="tool-card" id="tweet-generator">
@@ -563,7 +816,7 @@
                 </div>
                 <div class="tool-content">
                     <p>Generate engaging tweets for any topic in your brand voice. Perfect for social media managers and content creators.</p>
-                    <a href="#" class="btn open-tweet">Generate Tweets</a>
+                    <a href="#tweet-tool" class="btn open-tweet">Generate Tweets</a>
                 </div>
             </div>
             
@@ -575,7 +828,7 @@
                 </div>
                 <div class="tool-content">
                     <p>Create professional LinkedIn bios that highlight your skills and experience to attract opportunities.</p>
-                    <a href="#" class="btn open-linkedin">Create Bio</a>
+                    <a href="#linkedin-tool" class="btn open-linkedin">Create Bio</a>
                 </div>
             </div>
             
@@ -587,7 +840,7 @@
                 </div>
                 <div class="tool-content">
                     <p>Generate complete video scripts for YouTube, TikTok, or business videos in minutes.</p>
-                    <a href="#" class="btn open-script">Generate Script</a>
+                    <a href="#script-tool" class="btn open-script">Generate Script</a>
                 </div>
             </div>
             
@@ -599,7 +852,7 @@
                 </div>
                 <div class="tool-content">
                     <p>Create professional resumes tailored to specific job descriptions with our AI-powered builder.</p>
-                    <a href="#" class="btn open-resume">Build Resume</a>
+                    <a href="#resume-tool" class="btn open-resume">Build Resume</a>
                 </div>
             </div>
         </section>
@@ -619,30 +872,164 @@
         </div>
         
         <!-- About Section -->
-        <section class="about-section" id="about">
+        <section class="about-section">
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
-                        <h2>About AI Tools Hub</h2>
-                        <p>AI Tools Hub is a collection of powerful AI-powered generators designed to help content creators, professionals, and businesses save time and create high-quality content effortlessly.</p>
-                        <p>Our tools leverage advanced natural language processing to generate human-like text that matches your requirements and style.</p>
-                        
-                        <h3>Why Choose Our AI Tools?</h3>
-                        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                            <li>100% free to use with no hidden costs</li>
-                            <li>No login or registration required</li>
-                            <li>Generates unique, plagiarism-free content</li>
-                            <li>Customizable outputs to match your needs</li>
-                            <li>Constantly improving AI models</li>
-                        </ul>
-                        
-                        <a href="#tweet-generator" class="btn">Try Our Tools Now</a>
+                        <h3>About AI Power Tools</h3>
+                        <p>AI Power Tools is a collection of cutting-edge AI-powered generators designed to help professionals, content creators, and businesses save time and create high-quality content effortlessly.</p>
+                        <p>Our tools leverage advanced natural language processing to generate human-like text that matches your requirements and style, allowing you to focus on what really matters.</p>
+                        <a href="#tweet-generator" class="btn">Try Our Tools</a>
                     </div>
                     <div class="about-image">
                         <img src="https://images.unsplash.com/photo-1677442135136-ca9b3f4135bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80" alt="AI Technology">
                     </div>
                 </div>
+                
+                <div class="section-title" style="margin-top: 5rem;">
+                    <h2>Why Choose Us</h2>
+                    <p>Discover what makes our AI tools stand out from the competition</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Lightning Fast</h4>
+                        <p>Generate content in seconds, not hours. Our AI tools work at incredible speed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lock"></i>
+                        <h4>Secure & Private</h4>
+                        <p>Your data never leaves your browser. We don't store your inputs or outputs.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4>100% Free</h4>
+                        <p>No hidden costs or subscriptions. All our tools are completely free to use.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile Friendly</h4>
+                        <p>Works perfectly on all devices from desktops to smartphones.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-title">
+                <h2>What Our Users Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied users</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        The AI Tweet Generator has saved me hours of work each week. I can now create a month's worth of content in just an hour!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h5>Sarah Johnson</h5>
+                            <p>Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        As a freelancer, the Resume Builder helped me land 3 new clients in just two weeks. The tailored resumes make all the difference.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                        <div class="author-info">
+                            <h5>Michael Chen</h5>
+                            <p>Freelance Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        The LinkedIn Bio Creator gave me a professional edge I was missing. I've received more connection requests in a month than the previous year.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez">
+                        <div class="author-info">
+                            <h5>Emma Rodriguez</h5>
+                            <p>Marketing Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about our AI tools</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are these AI tools really free to use?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our AI tools are completely free to use with no hidden costs or subscriptions. We believe powerful AI tools should be accessible to everyone.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need to create an account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No account or registration is required. You can start using our tools immediately without providing any personal information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is my data secure and private?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. All processing happens in your browser - we don't store your inputs or the generated outputs on our servers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I use the generated content commercially?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all content generated by our tools is yours to use however you see fit, including for commercial purposes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How accurate are the AI-generated results?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI models produce high-quality, human-like content. However, we always recommend reviewing and editing the output to ensure it meets your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Boost Your Productivity?</h2>
+            <p>Join thousands of professionals who are already saving hours every week with our AI tools</p>
+            <a href="#tweet-generator" class="btn">Get Started Now</a>
         </section>
         
         <!-- AI Tweet Generator Form -->
@@ -843,34 +1230,11 @@
         </div>
     </main>
     
-    <!-- FAQ Chatbot -->
-    <div class="chatbot-toggle" id="chatbotToggle">
-        <i class="fas fa-robot"></i>
-    </div>
-    
-    <div class="chatbot-container" id="chatbotContainer">
-        <div class="chatbot-header">
-            <span>FAQ Assistant</span>
-            <i class="fas fa-times" id="closeChatbot"></i>
-        </div>
-        <div class="chatbot-body">
-            <div class="chatbot-messages" id="chatbotMessages">
-                <div class="message bot-message">
-                    Hello! I'm your AI assistant. How can I help you with our tools today?
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatbotInput" placeholder="Ask me anything...">
-                <button class="chatbot-btn" id="sendMessage"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
-    </div>
-    
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h4>AI Tools Hub</h4>
+                    <h4>AI Power Tools</h4>
                     <p>Powerful AI generators to boost your productivity and content creation.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -892,31 +1256,29 @@
                 <div class="footer-column">
                     <h4>Resources</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
                     <h4>Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 AI Tools Hub. All rights reserved.</p>
+                <p>&copy; 2025 AI Power Tools. All rights reserved.</p>
             </div>
         </div>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
         // Initialize tools
         document.addEventListener('DOMContentLoaded', function() {
@@ -962,356 +1324,24 @@
                 window.scrollTo({ top: document.querySelector(`.${toolId}`).offsetTop - 20, behavior: 'smooth' });
             }
             
-            // AI Tweet Generator
-            document.getElementById('tweetGenerator').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const topic = document.getElementById('tweetTopic').value;
-                const tone = document.getElementById('tweetTone').value;
-                const keywords = document.getElementById('tweetKeywords').value;
-                const count = document.getElementById('tweetCount').value;
-                
-                document.getElementById('tweetSpinner').style.display = 'block';
-                document.getElementById('tweetResult').style.display = 'none';
-                
-                // Simulate API call with timeout
-                setTimeout(() => {
-                    const tweets = generateTweets(topic, tone, keywords, count);
-                    document.getElementById('tweetContent').innerHTML = tweets;
-                    document.getElementById('tweetSpinner').style.display = 'none';
-                    document.getElementById('tweetResult').style.display = 'block';
-                    document.getElementById('tweetResult').classList.add('animated-result');
-                }, 1500);
-            });
-            
-            function generateTweets(topic, tone, keywords, count) {
-                // In a real app, this would call an AI API
-                // This is a simulation with sample outputs
-                let tweets = [];
-                const keywordList = keywords ? keywords.split(',').map(k => k.trim()) : [];
-                
-                for (let i = 0; i < count; i++) {
-                    let tweet = `🚀 ${topic}`;
-                    
-                    if (tone === 'professional') {
-                        tweet = `As a professional in this field, I'd like to share insights about ${topic.toLowerCase()}.`;
-                    } else if (tone === 'funny') {
-                        tweet = `Why did the ${topic.toLowerCase()} cross the road? To get to the other slide of the PowerPoint! 😂`;
-                    } else if (tone === 'inspirational') {
-                        tweet = `You have within you right now, everything you need to ${topic.toLowerCase()}. The only question is - will you take action? ✨`;
-                    } else if (tone === 'controversial') {
-                        tweet = `Let's be honest - most people are doing ${topic.toLowerCase()} completely wrong. Here's why...`;
-                    }
-                    
-                    if (keywordList.length > 0) {
-                        tweet += ` ${keywordList.join(' ')}`;
-                    }
-                    
-                    if (i === 0 && count > 1) {
-                        tweet += ` (1/${count})`;
-                    } else if (i > 0) {
-                        tweet += ` (${i+1}/${count})`;
-                    }
-                    
-                    tweets.push(`<p>${tweet}</p><hr>`);
-                }
-                
-                return tweets.join('');
-            }
-            
-            document.getElementById('copyTweets').addEventListener('click', function() {
-                const tweets = document.getElementById('tweetContent').textContent;
-                navigator.clipboard.writeText(tweets).then(() => {
-                    alert('Tweets copied to clipboard!');
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
                 });
-            });
-            
-            // AI LinkedIn Bio Creator
-            document.getElementById('linkedinBioCreator').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = document.getElementById('bioName').value;
-                const profession = document.getElementById('bioProfession').value;
-                const experience = document.getElementById('bioExperience').value;
-                const skills = document.getElementById('bioSkills').value;
-                const achievements = document.getElementById('bioAchievements').value;
-                
-                document.getElementById('bioSpinner').style.display = 'block';
-                document.getElementById('bioResult').style.display = 'none';
-                
-                setTimeout(() => {
-                    const bio = generateBio(name, profession, experience, skills, achievements);
-                    document.getElementById('bioContent').innerHTML = bio;
-                    document.getElementById('bioSpinner').style.display = 'none';
-                    document.getElementById('bioResult').style.display = 'block';
-                    document.getElementById('bioResult').classList.add('animated-result');
-                }, 1500);
-            });
-            
-            function generateBio(name, profession, experience, skills, achievements) {
-                // In a real app, this would call an AI API
-                const skillList = skills.split(',').map(s => s.trim());
-                const achievementList = achievements ? achievements.split('\n') : [];
-                
-                let bio = `<h4>${name}</h4>`;
-                bio += `<p><strong>${profession}</strong> with ${experience} years of experience</p>`;
-                bio += `<p>Specializing in ${skillList.slice(0, 3).join(', ')}${skillList.length > 3 ? ' and more' : ''}.</p>`;
-                
-                if (achievementList.length > 0) {
-                    bio += `<h5>Key Achievements:</h5><ul>`;
-                    achievementList.forEach(ach => {
-                        if (ach.trim()) bio += `<li>${ach}</li>`;
-                    });
-                    bio += `</ul>`;
-                }
-                
-                bio += `<h5>Skills:</h5><p>${skillList.join(' • ')}</p>`;
-                bio += `<p>Let's connect to discuss opportunities in ${profession.toLowerCase()}!</p>`;
-                
-                return bio;
-            }
-            
-            document.getElementById('copyBio').addEventListener('click', function() {
-                const bio = document.getElementById('bioContent').textContent;
-                navigator.clipboard.writeText(bio).then(() => {
-                    alert('Bio copied to clipboard!');
-                });
-            });
-            
-            // AI Video Script Generator
-            document.getElementById('videoScriptGenerator').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const topic = document.getElementById('scriptTopic').value;
-                const type = document.getElementById('scriptType').value;
-                const duration = document.getElementById('scriptDuration').value;
-                const style = document.getElementById('scriptStyle').value;
-                const points = document.getElementById('scriptPoints').value;
-                
-                document.getElementById('scriptSpinner').style.display = 'block';
-                document.getElementById('scriptResult').style.display = 'none';
-                
-                setTimeout(() => {
-                    const script = generateScript(topic, type, duration, style, points);
-                    document.getElementById('scriptContent').innerHTML = script;
-                    document.getElementById('scriptSpinner').style.display = 'none';
-                    document.getElementById('scriptResult').style.display = 'block';
-                    document.getElementById('scriptResult').classList.add('animated-result');
-                }, 2000);
-            });
-            
-            function generateScript(topic, type, duration, style, points) {
-                // In a real app, this would call an AI API
-                const pointList = points ? points.split('\n').filter(p => p.trim()) : [];
-                const durationText = duration === '1' ? '1 minute' : `${duration} minutes`;
-                
-                let script = `<h4>Video Script: ${topic}</h4>`;
-                script += `<p><strong>Type:</strong> ${type} | <strong>Duration:</strong> ${durationText} | <strong>Style:</strong> ${style}</p>`;
-                
-                script += `<h5>Introduction:</h5>`;
-                if (style === 'formal') {
-                    script += `<p>"Good [morning/afternoon/evening] everyone. Today we'll be discussing ${topic.toLowerCase()}. This is an important topic because..."</p>`;
-                } else if (style === 'funny') {
-                    script += `<p>"What do you get when you cross ${topic.toLowerCase()} with a comedian? This video! But seriously folks..."</p>`;
-                } else {
-                    script += `<p>"Hey there! In this video, we're talking about ${topic.toLowerCase()}. Stick around because..."</p>`;
-                }
-                
-                if (pointList.length > 0) {
-                    script += `<h5>Main Content:</h5><ol>`;
-                    pointList.forEach((point, i) => {
-                        script += `<li><strong>${point}</strong><br>`;
-                        
-                        if (type === 'tutorial') {
-                            script += `"First, you'll want to... Then... Finally..."`;
-                        } else if (type === 'review') {
-                            script += `"What I liked about this was... However, one drawback is..."`;
-                        } else {
-                            script += `"This is important because..."`;
-                        }
-                        
-                        script += `</li>`;
-                    });
-                    script += `</ol>`;
-                } else {
-                    script += `<h5>Main Content:</h5><p>"Let's dive into the key aspects of ${topic.toLowerCase()}. First..."</p>`;
-                }
-                
-                script += `<h5>Conclusion:</h5>`;
-                script += `<p>"To wrap up... Don't forget to like and subscribe for more content on ${topic.toLowerCase()}!"</p>`;
-                
-                return script;
-            }
-            
-            document.getElementById('copyScript').addEventListener('click', function() {
-                const script = document.getElementById('scriptContent').textContent;
-                navigator.clipboard.writeText(script).then(() => {
-                    alert('Script copied to clipboard!');
-                });
-            });
-            
-            // AI Resume Builder
-            document.getElementById('resumeBuilder').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = document.getElementById('resumeName').value;
-                const title = document.getElementById('resumeTitle').value;
-                const experience = document.getElementById('resumeExperience').value;
-                const education = document.getElementById('resumeEducation').value;
-                const skills = document.getElementById('resumeSkills').value;
-                const jobDesc = document.getElementById('resumeJobDesc').value;
-                
-                document.getElementById('resumeSpinner').style.display = 'block';
-                document.getElementById('resumeResult').style.display = 'none';
-                
-                setTimeout(() => {
-                    const resume = generateResume(name, title, experience, education, skills, jobDesc);
-                    document.getElementById('resumeContent').innerHTML = resume;
-                    document.getElementById('resumeSpinner').style.display = 'none';
-                    document.getElementById('resumeResult').style.display = 'block';
-                    document.getElementById('resumeResult').classList.add('animated-result');
-                }, 2000);
-            });
-            
-            function generateResume(name, title, experience, education, skills, jobDesc) {
-                // In a real app, this would call an AI API
-                const expList = experience.split('\n').filter(e => e.trim());
-                const eduList = education.split('\n').filter(e => e.trim());
-                const skillList = skills.split(',').map(s => s.trim());
-                
-                let resume = `<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px;">
-                    <h1 style="color: #4d44db; border-bottom: 2px solid #4d44db; padding-bottom: 10px;">${name}</h1>
-                    <h3 style="color: #666;">${title}</h3>`;
-                
-                if (expList.length > 0) {
-                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">PROFESSIONAL EXPERIENCE</h4>`;
-                    expList.forEach(exp => {
-                        const parts = exp.split(',');
-                        if (parts.length >= 3) {
-                            resume += `<p><strong>${parts[1].trim()}</strong> | ${parts[0].trim()} | ${parts[2].trim()}</p>`;
-                            resume += `<ul><li>Key achievement or responsibility</li><li>Another key achievement</li></ul>`;
-                        }
-                    });
-                }
-                
-                if (eduList.length > 0) {
-                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">EDUCATION</h4>`;
-                    eduList.forEach(edu => {
-                        const parts = edu.split(',');
-                        if (parts.length >= 2) {
-                            resume += `<p><strong>${parts[0].trim()}</strong> | ${parts[1].trim()}${parts.length > 2 ? ` | ${parts[2].trim()}` : ''}</p>`;
-                        }
-                    });
-                }
-                
-                if (skillList.length > 0) {
-                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">SKILLS</h4>`;
-                    resume += `<p>${skillList.join(' • ')}</p>`;
-                }
-                
-                if (jobDesc) {
-                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">TARGET POSITION</h4>`;
-                    resume += `<p>This resume has been tailored for opportunities in: ${jobDesc.substring(0, 100)}...</p>`;
-                }
-                
-                resume += `</div>`;
-                
-                return resume;
-            }
-            
-            document.getElementById('copyResume').addEventListener('click', function() {
-                const resume = document.getElementById('resumeContent').textContent;
-                navigator.clipboard.writeText(resume).then(() => {
-                    alert('Resume copied to clipboard!');
-                });
-            });
-            
-            document.getElementById('downloadResume').addEventListener('click', function() {
-                const { jsPDF } = window.jspdf;
-                const element = document.getElementById('resumeContent');
-                
-                html2canvas(element).then(canvas => {
-                    const imgData = canvas.toDataURL('image/png');
-                    const pdf = new jsPDF();
-                    const imgProps = pdf.getImageProperties(imgData);
-                    const pdfWidth = pdf.internal.pageSize.getWidth();
-                    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-                    
-                    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-                    pdf.save('resume.pdf');
-                });
-            });
-            
-            // FAQ Chatbot
-            const chatbotToggle = document.getElementById('chatbotToggle');
-            const chatbotContainer = document.getElementById('chatbotContainer');
-            const closeChatbot = document.getElementById('closeChatbot');
-            const chatbotMessages = document.getElementById('chatbotMessages');
-            const chatbotInput = document.getElementById('chatbotInput');
-            const sendMessage = document.getElementById('sendMessage');
-            
-            chatbotToggle.addEventListener('click', function() {
-                chatbotContainer.style.display = chatbotContainer.style.display === 'block' ? 'none' : 'block';
-            });
-            
-            closeChatbot.addEventListener('click', function() {
-                chatbotContainer.style.display = 'none';
-            });
-            
-            function addMessage(message, isUser) {
-                const messageDiv = document.createElement('div');
-                messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-                messageDiv.textContent = message;
-                chatbotMessages.appendChild(messageDiv);
-                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
-            }
-            
-            function handleUserMessage() {
-                const message = chatbotInput.value.trim();
-                if (message) {
-                    addMessage(message, true);
-                    chatbotInput.value = '';
-                    
-                    // Bot response
-                    setTimeout(() => {
-                        let response = "I'm sorry, I couldn't understand your question. Could you rephrase it?";
-                        
-                        if (message.toLowerCase().includes('tweet')) {
-                            response = "Our Tweet Generator helps you create engaging tweets. Just enter your topic, select a tone, and it will generate tweet ideas for you!";
-                        } else if (message.toLowerCase().includes('linkedin') || message.toLowerCase().includes('bio')) {
-                            response = "The LinkedIn Bio Creator generates professional bios based on your experience and skills. Fill in your details and it will create a polished bio for your profile.";
-                        } else if (message.toLowerCase().includes('video') || message.toLowerCase().includes('script')) {
-                            response = "Our Video Script Generator creates complete scripts for your videos. Specify the topic, duration, and style, and it will generate a structured script.";
-                        } else if (message.toLowerCase().includes('resume')) {
-                            response = "The Resume Builder helps you create professional resumes. Enter your work experience, education, and skills, and it will format a resume for you.";
-                        } else if (message.toLowerCase().includes('free')) {
-                            response = "Yes! All our tools are completely free to use with no hidden costs or registration required.";
-                        } else if (message.toLowerCase().includes('hello') || message.toLowerCase().includes('hi')) {
-                            response = "Hello! How can I help you with our AI tools today?";
-                        }
-                        
-                        addMessage(response, false);
-                    }, 500);
-                }
-            }
-            
-            sendMessage.addEventListener('click', handleUserMessage);
-            
-            chatbotInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    handleUserMessage();
-                }
             });
             
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
                     e.preventDefault();
-                    
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
                     const targetElement = document.querySelector(targetId);
+                    
                     if (targetElement) {
                         window.scrollTo({
                             top: targetElement.offsetTop - 20,
@@ -1320,6 +1350,9 @@
                     }
                 });
             });
+            
+            // Initialize AdSense
+            (adsbygoogle = window.adsbygoogle || []).push({});
         });
     </script>
 </body>

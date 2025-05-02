@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - AI Power Tools</title>
+    <style>
+        :root {
+            --primary: #6c63ff;
+            --secondary: #4d44db;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --background: #f5f7ff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .faq-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .faq-header p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #f9f9f9;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: #f9f9f9;
+        }
+        
+        .faq-item.active .faq-question {
+            background: #f9f9f9;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .contact-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-cta h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .faq-header h1 {
+                font-size: 2rem;
+            }
+            
+            .faq-question {
+                font-size: 1rem;
+                padding: 1.2rem;
+            }
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="faq-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our AI tools and services</p>
+        </div>
+        
+        <div class="faq-container">
+            <!-- General Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is AI Power Tools?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>AI Power Tools is a collection of AI-powered generators that help you create high-quality content quickly and easily. Our tools include tweet generators, LinkedIn bio creators, video script writers, and resume builders - all powered by artificial intelligence.</p>
+                </div>
+            </div>
+            
+            <!-- Free Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are these tools really free to use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! All our AI tools are completely free to use with no hidden costs or subscriptions. We believe powerful AI tools should be accessible to everyone. In the future, we may offer premium features, but the core functionality will always remain free.</p>
+                </div>
+            </div>
+            
+            <!-- Account Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need to create an account?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No account or registration is required. You can start using our tools immediately without providing any personal information. Everything works right in your browser.</p>
+                </div>
+            </div>
+            
+            <!-- Privacy Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is my data private and secure?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. All processing happens in your browser - we don't store your inputs or the generated outputs on our servers. Your content never leaves your device unless you choose to save or share it.</p>
+                </div>
+            </div>
+            
+            <!-- Commercial Use -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I use the generated content commercially?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, all content generated by our tools is yours to use however you see fit, including for commercial purposes. We don't claim any ownership over the content you create with our tools.</p>
+                </div>
+            </div>
+            
+            <!-- Quality Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How accurate are the AI-generated results?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our AI models produce high-quality, human-like content. However, we always recommend reviewing and editing the output to ensure it meets your specific needs. The more detailed your input, the better the results will be.</p>
+                </div>
+            </div>
+            
+            <!-- Browser Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Which browsers are supported?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our tools work on all modern browsers including Chrome, Firefox, Safari, and Edge. For the best experience, we recommend using the latest version of your browser.</p>
+                </div>
+            </div>
+            
+            <!-- Mobile Questions -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do the tools work on mobile devices?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! All our tools are fully responsive and work perfectly on smartphones and tablets. You can create content on the go from any device.</p>
+                </div>
+            </div>
+            
+            <!-- Feature Requests -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I request new features or tools?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We'd love to hear your suggestions! Please contact us with your ideas for new features or tools you'd like to see added to our platform.</p>
+                </div>
+            </div>
+            
+            <!-- Technical Issues -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What should I do if a tool isn't working?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>First, try refreshing the page and ensuring you're using a supported browser. If the problem persists, please contact us with details about the issue you're experiencing, including any error messages you see.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-cta">
+            <h3>Still have questions?</h3>
+            <p>We're here to help! Contact our support team for any additional questions.</p>
+            <a href="contact.html" class="btn">Contact Support</a>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

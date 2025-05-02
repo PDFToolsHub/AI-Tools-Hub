@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub - Powerful AI Generators for Content Creation</title>
+    <meta name="description" content="Free AI tools including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot. Boost your productivity with AI.">
+    <meta name="keywords" content="AI tools, tweet generator, LinkedIn bio, video script, resume builder, chatbot, content creation">
+    <meta name="author" content="AI Tools Hub">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="AI Tools Hub - Powerful AI Generators for Content Creation">
+    <meta property="og:description" content="Free AI tools including tweet generator, LinkedIn bio creator, video script writer, resume builder, and FAQ chatbot.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/ai-tools-preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    
+    <style>
+        :root {
+            --primary: #6c63ff;
+            --secondary: #4d44db;
+            --accent: #8b85ff;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --background: #f5f7ff;
+            --text: #2b2d42;
+            --card-bg: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1677442135136-760c813a743f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .tool-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .tool-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tool-header i {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+        
+        .tool-header h3 {
+            font-size: 1.5rem;
+        }
+        
+        .tool-content {
+            padding: 1.5rem;
+        }
+        
+        .tool-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .tool-form {
+            display: none;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+            animation: fadeIn 0.5s ease;
+            border: 1px solid #e0e0e0;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .result-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .result-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .result-content {
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ee 100%);
+            margin: 3rem 0;
+            border-radius: 10px;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        /* Ad Container */
+        .ad-container {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+        
+        .ad-container p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        /* Chatbot Styles */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .chatbot-header {
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .chatbot-body {
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chatbot-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        
+        .chatbot-input {
+            display: flex;
+            padding: 0.8rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .chatbot-input input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+        
+        .chatbot-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+        
+        .message {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        
+        .user-message {
+            background: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 0;
+        }
+        
+        .bot-message {
+            background: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 0;
+        }
+        
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1001;
+        }
+        
+        .chatbot-toggle i {
+            font-size: 1.5rem;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .chatbot-container {
+                width: 300px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 1.5rem;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chatbot-container {
+                width: 100%;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        
+        /* Tool specific styles */
+        .tweet-form, .linkedin-form, .script-form, .resume-form {
+            display: none;
+        }
+        
+        .active-tool {
+            display: block;
+        }
+        
+        /* Animation for results */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .animated-result {
+            animation: pulse 0.5s ease;
+        }
+        
+        /* Loading spinner */
+        .spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Tools Hub</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#tweet-generator">Tweet Generator</a></li>
+                    <li><a href="#linkedin-bio">LinkedIn Bio</a></li>
+                    <li><a href="#video-script">Video Script</a></li>
+                    <li><a href="#resume-builder">Resume Builder</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="hero">
+            <h1>Supercharge Your Content Creation with AI</h1>
+            <p>Generate high-quality tweets, LinkedIn bios, video scripts, and resumes in seconds with our powerful AI tools.</p>
+            <a href="#tweet-generator" class="btn">Get Started</a>
+        </section>
+        
+        <!-- AdSense Banner -->
+        <div class="ad-container">
+            <p>Advertisement</p>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <section class="tools-grid">
+            <!-- AI Tweet Generator Card -->
+            <div class="tool-card" id="tweet-generator">
+                <div class="tool-header">
+                    <i class="fab fa-twitter"></i>
+                    <h3>AI Tweet Generator</h3>
+                </div>
+                <div class="tool-content">
+                    <p>Generate engaging tweets for any topic in your brand voice. Perfect for social media managers and content creators.</p>
+                    <a href="#" class="btn open-tweet">Generate Tweets</a>
+                </div>
+            </div>
+            
+            <!-- AI LinkedIn Bio Creator Card -->
+            <div class="tool-card" id="linkedin-bio">
+                <div class="tool-header">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>AI LinkedIn Bio Creator</h3>
+                </div>
+                <div class="tool-content">
+                    <p>Create professional LinkedIn bios that highlight your skills and experience to attract opportunities.</p>
+                    <a href="#" class="btn open-linkedin">Create Bio</a>
+                </div>
+            </div>
+            
+            <!-- AI Video Script Generator Card -->
+            <div class="tool-card" id="video-script">
+                <div class="tool-header">
+                    <i class="fas fa-video"></i>
+                    <h3>AI Video Script Generator</h3>
+                </div>
+                <div class="tool-content">
+                    <p>Generate complete video scripts for YouTube, TikTok, or business videos in minutes.</p>
+                    <a href="#" class="btn open-script">Generate Script</a>
+                </div>
+            </div>
+            
+            <!-- AI Resume Builder Card -->
+            <div class="tool-card" id="resume-builder">
+                <div class="tool-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>AI Resume Builder</h3>
+                </div>
+                <div class="tool-content">
+                    <p>Create professional resumes tailored to specific job descriptions with our AI-powered builder.</p>
+                    <a href="#" class="btn open-resume">Build Resume</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AdSense Banner -->
+        <div class="ad-container">
+            <p>Advertisement</p>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About AI Tools Hub</h2>
+                        <p>AI Tools Hub is a collection of powerful AI-powered generators designed to help content creators, professionals, and businesses save time and create high-quality content effortlessly.</p>
+                        <p>Our tools leverage advanced natural language processing to generate human-like text that matches your requirements and style.</p>
+                        
+                        <h3>Why Choose Our AI Tools?</h3>
+                        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                            <li>100% free to use with no hidden costs</li>
+                            <li>No login or registration required</li>
+                            <li>Generates unique, plagiarism-free content</li>
+                            <li>Customizable outputs to match your needs</li>
+                            <li>Constantly improving AI models</li>
+                        </ul>
+                        
+                        <a href="#tweet-generator" class="btn">Try Our Tools Now</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1677442135136-ca9b3f4135bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80" alt="AI Technology">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- AI Tweet Generator Form -->
+        <div class="tool-form tweet-form" id="tweet-tool">
+            <h2>AI Tweet Generator</h2>
+            <form id="tweetGenerator">
+                <div class="form-group">
+                    <label for="tweetTopic">What's your tweet about?</label>
+                    <input type="text" id="tweetTopic" class="form-control" placeholder="e.g. Productivity tips for remote workers" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tweetTone">Select tone:</label>
+                    <select id="tweetTone" class="form-control" required>
+                        <option value="professional">Professional</option>
+                        <option value="casual" selected>Casual</option>
+                        <option value="funny">Funny</option>
+                        <option value="inspirational">Inspirational</option>
+                        <option value="controversial">Controversial</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tweetKeywords">Keywords to include (comma separated):</label>
+                    <input type="text" id="tweetKeywords" class="form-control" placeholder="e.g. productivity, remote work, efficiency">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tweetCount">Number of tweets to generate:</label>
+                    <select id="tweetCount" class="form-control">
+                        <option value="1">1</option>
+                        <option value="3" selected>3</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">Generate Tweets</button>
+                <a href="#" class="btn btn-outline close-tool">Close</a>
+            </form>
+            
+            <div class="spinner" id="tweetSpinner"></div>
+            
+            <div class="result-container" id="tweetResult" style="display: none;">
+                <h3 class="result-title">Generated Tweets</h3>
+                <div class="result-content" id="tweetContent"></div>
+                <button class="btn" id="copyTweets" style="margin-top: 1rem;">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <!-- AI LinkedIn Bio Creator Form -->
+        <div class="tool-form linkedin-form" id="linkedin-tool">
+            <h2>AI LinkedIn Bio Creator</h2>
+            <form id="linkedinBioCreator">
+                <div class="form-group">
+                    <label for="bioName">Your Name:</label>
+                    <input type="text" id="bioName" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bioProfession">Your Profession/Role:</label>
+                    <input type="text" id="bioProfession" class="form-control" placeholder="e.g. Digital Marketing Specialist" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bioExperience">Years of Experience:</label>
+                    <input type="number" id="bioExperience" class="form-control" placeholder="e.g. 5" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bioSkills">Key Skills (comma separated):</label>
+                    <input type="text" id="bioSkills" class="form-control" placeholder="e.g. SEO, Content Marketing, Social Media" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bioAchievements">Notable Achievements:</label>
+                    <textarea id="bioAchievements" class="form-control" placeholder="e.g. Grew company social media following by 300%"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Create Bio</button>
+                <a href="#" class="btn btn-outline close-tool">Close</a>
+            </form>
+            
+            <div class="spinner" id="bioSpinner"></div>
+            
+            <div class="result-container" id="bioResult" style="display: none;">
+                <h3 class="result-title">Your LinkedIn Bio</h3>
+                <div class="result-content" id="bioContent"></div>
+                <button class="btn" id="copyBio" style="margin-top: 1rem;">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <!-- AI Video Script Generator Form -->
+        <div class="tool-form script-form" id="script-tool">
+            <h2>AI Video Script Generator</h2>
+            <form id="videoScriptGenerator">
+                <div class="form-group">
+                    <label for="scriptTopic">Video Topic:</label>
+                    <input type="text" id="scriptTopic" class="form-control" placeholder="e.g. How to improve your productivity" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scriptType">Video Type:</label>
+                    <select id="scriptType" class="form-control" required>
+                        <option value="explainer">Explainer/How-To</option>
+                        <option value="tutorial">Tutorial</option>
+                        <option value="review">Product Review</option>
+                        <option value="vlog">Vlog</option>
+                        <option value="commercial">Commercial/Ad</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scriptDuration">Video Duration (minutes):</label>
+                    <select id="scriptDuration" class="form-control">
+                        <option value="1">1 min</option>
+                        <option value="3">3 min</option>
+                        <option value="5" selected>5 min</option>
+                        <option value="10">10 min</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scriptStyle">Presentation Style:</label>
+                    <select id="scriptStyle" class="form-control">
+                        <option value="formal">Formal</option>
+                        <option value="casual" selected>Casual</option>
+                        <option value="funny">Funny</option>
+                        <option value="dramatic">Dramatic</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scriptPoints">Key Points to Cover:</label>
+                    <textarea id="scriptPoints" class="form-control" placeholder="List the main points you want to cover (one per line)"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Generate Script</button>
+                <a href="#" class="btn btn-outline close-tool">Close</a>
+            </form>
+            
+            <div class="spinner" id="scriptSpinner"></div>
+            
+            <div class="result-container" id="scriptResult" style="display: none;">
+                <h3 class="result-title">Your Video Script</h3>
+                <div class="result-content" id="scriptContent"></div>
+                <button class="btn" id="copyScript" style="margin-top: 1rem;">Copy to Clipboard</button>
+            </div>
+        </div>
+        
+        <!-- AI Resume Builder Form -->
+        <div class="tool-form resume-form" id="resume-tool">
+            <h2>AI Resume Builder</h2>
+            <form id="resumeBuilder">
+                <div class="form-group">
+                    <label for="resumeName">Full Name:</label>
+                    <input type="text" id="resumeName" class="form-control" placeholder="e.g. Jane Smith" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumeTitle">Professional Title:</label>
+                    <input type="text" id="resumeTitle" class="form-control" placeholder="e.g. Software Engineer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumeExperience">Work Experience (company, title, years):</label>
+                    <textarea id="resumeExperience" class="form-control" placeholder="e.g. Google, Senior Developer, 2018-2023\nMicrosoft, Developer, 2015-2018" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumeEducation">Education:</label>
+                    <textarea id="resumeEducation" class="form-control" placeholder="e.g. Stanford University, Computer Science, 2011-2015"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumeSkills">Skills (comma separated):</label>
+                    <input type="text" id="resumeSkills" class="form-control" placeholder="e.g. JavaScript, React, Node.js" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resumeJobDesc">Target Job Description (optional):</label>
+                    <textarea id="resumeJobDesc" class="form-control" placeholder="Paste the job description you're applying for to tailor your resume"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Build Resume</button>
+                <a href="#" class="btn btn-outline close-tool">Close</a>
+            </form>
+            
+            <div class="spinner" id="resumeSpinner"></div>
+            
+            <div class="result-container" id="resumeResult" style="display: none;">
+                <h3 class="result-title">Your Professional Resume</h3>
+                <div class="result-content" id="resumeContent"></div>
+                <div style="margin-top: 1rem;">
+                    <button class="btn" id="copyResume">Copy to Clipboard</button>
+                    <button class="btn btn-outline" id="downloadResume" style="margin-left: 0.5rem;">Download as PDF</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- FAQ Chatbot -->
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <i class="fas fa-robot"></i>
+    </div>
+    
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <span>FAQ Assistant</span>
+            <i class="fas fa-times" id="closeChatbot"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    Hello! I'm your AI assistant. How can I help you with our tools today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Ask me anything...">
+                <button class="chatbot-btn" id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>AI Tools Hub</h4>
+                    <p>Powerful AI generators to boost your productivity and content creation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="#tweet-generator">Tweet Generator</a></li>
+                        <li><a href="#linkedin-bio">LinkedIn Bio Creator</a></li>
+                        <li><a href="#video-script">Video Script Generator</a></li>
+                        <li><a href="#resume-builder">Resume Builder</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 AI Tools Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        // Initialize tools
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tool Toggle Functionality
+            document.querySelectorAll('.open-tweet').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showTool('tweet-tool');
+                });
+            });
+            
+            document.querySelectorAll('.open-linkedin').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showTool('linkedin-tool');
+                });
+            });
+            
+            document.querySelectorAll('.open-script').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showTool('script-tool');
+                });
+            });
+            
+            document.querySelectorAll('.open-resume').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    showTool('resume-tool');
+                });
+            });
+            
+            document.querySelectorAll('.close-tool').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelectorAll('.tool-form').forEach(form => form.style.display = 'none');
+                });
+            });
+            
+            function showTool(toolId) {
+                document.querySelectorAll('.tool-form').forEach(form => form.style.display = 'none');
+                document.querySelector(`.${toolId}`).style.display = 'block';
+                window.scrollTo({ top: document.querySelector(`.${toolId}`).offsetTop - 20, behavior: 'smooth' });
+            }
+            
+            // AI Tweet Generator
+            document.getElementById('tweetGenerator').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const topic = document.getElementById('tweetTopic').value;
+                const tone = document.getElementById('tweetTone').value;
+                const keywords = document.getElementById('tweetKeywords').value;
+                const count = document.getElementById('tweetCount').value;
+                
+                document.getElementById('tweetSpinner').style.display = 'block';
+                document.getElementById('tweetResult').style.display = 'none';
+                
+                // Simulate API call with timeout
+                setTimeout(() => {
+                    const tweets = generateTweets(topic, tone, keywords, count);
+                    document.getElementById('tweetContent').innerHTML = tweets;
+                    document.getElementById('tweetSpinner').style.display = 'none';
+                    document.getElementById('tweetResult').style.display = 'block';
+                    document.getElementById('tweetResult').classList.add('animated-result');
+                }, 1500);
+            });
+            
+            function generateTweets(topic, tone, keywords, count) {
+                // In a real app, this would call an AI API
+                // This is a simulation with sample outputs
+                let tweets = [];
+                const keywordList = keywords ? keywords.split(',').map(k => k.trim()) : [];
+                
+                for (let i = 0; i < count; i++) {
+                    let tweet = `🚀 ${topic}`;
+                    
+                    if (tone === 'professional') {
+                        tweet = `As a professional in this field, I'd like to share insights about ${topic.toLowerCase()}.`;
+                    } else if (tone === 'funny') {
+                        tweet = `Why did the ${topic.toLowerCase()} cross the road? To get to the other slide of the PowerPoint! 😂`;
+                    } else if (tone === 'inspirational') {
+                        tweet = `You have within you right now, everything you need to ${topic.toLowerCase()}. The only question is - will you take action? ✨`;
+                    } else if (tone === 'controversial') {
+                        tweet = `Let's be honest - most people are doing ${topic.toLowerCase()} completely wrong. Here's why...`;
+                    }
+                    
+                    if (keywordList.length > 0) {
+                        tweet += ` ${keywordList.join(' ')}`;
+                    }
+                    
+                    if (i === 0 && count > 1) {
+                        tweet += ` (1/${count})`;
+                    } else if (i > 0) {
+                        tweet += ` (${i+1}/${count})`;
+                    }
+                    
+                    tweets.push(`<p>${tweet}</p><hr>`);
+                }
+                
+                return tweets.join('');
+            }
+            
+            document.getElementById('copyTweets').addEventListener('click', function() {
+                const tweets = document.getElementById('tweetContent').textContent;
+                navigator.clipboard.writeText(tweets).then(() => {
+                    alert('Tweets copied to clipboard!');
+                });
+            });
+            
+            // AI LinkedIn Bio Creator
+            document.getElementById('linkedinBioCreator').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('bioName').value;
+                const profession = document.getElementById('bioProfession').value;
+                const experience = document.getElementById('bioExperience').value;
+                const skills = document.getElementById('bioSkills').value;
+                const achievements = document.getElementById('bioAchievements').value;
+                
+                document.getElementById('bioSpinner').style.display = 'block';
+                document.getElementById('bioResult').style.display = 'none';
+                
+                setTimeout(() => {
+                    const bio = generateBio(name, profession, experience, skills, achievements);
+                    document.getElementById('bioContent').innerHTML = bio;
+                    document.getElementById('bioSpinner').style.display = 'none';
+                    document.getElementById('bioResult').style.display = 'block';
+                    document.getElementById('bioResult').classList.add('animated-result');
+                }, 1500);
+            });
+            
+            function generateBio(name, profession, experience, skills, achievements) {
+                // In a real app, this would call an AI API
+                const skillList = skills.split(',').map(s => s.trim());
+                const achievementList = achievements ? achievements.split('\n') : [];
+                
+                let bio = `<h4>${name}</h4>`;
+                bio += `<p><strong>${profession}</strong> with ${experience} years of experience</p>`;
+                bio += `<p>Specializing in ${skillList.slice(0, 3).join(', ')}${skillList.length > 3 ? ' and more' : ''}.</p>`;
+                
+                if (achievementList.length > 0) {
+                    bio += `<h5>Key Achievements:</h5><ul>`;
+                    achievementList.forEach(ach => {
+                        if (ach.trim()) bio += `<li>${ach}</li>`;
+                    });
+                    bio += `</ul>`;
+                }
+                
+                bio += `<h5>Skills:</h5><p>${skillList.join(' • ')}</p>`;
+                bio += `<p>Let's connect to discuss opportunities in ${profession.toLowerCase()}!</p>`;
+                
+                return bio;
+            }
+            
+            document.getElementById('copyBio').addEventListener('click', function() {
+                const bio = document.getElementById('bioContent').textContent;
+                navigator.clipboard.writeText(bio).then(() => {
+                    alert('Bio copied to clipboard!');
+                });
+            });
+            
+            // AI Video Script Generator
+            document.getElementById('videoScriptGenerator').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const topic = document.getElementById('scriptTopic').value;
+                const type = document.getElementById('scriptType').value;
+                const duration = document.getElementById('scriptDuration').value;
+                const style = document.getElementById('scriptStyle').value;
+                const points = document.getElementById('scriptPoints').value;
+                
+                document.getElementById('scriptSpinner').style.display = 'block';
+                document.getElementById('scriptResult').style.display = 'none';
+                
+                setTimeout(() => {
+                    const script = generateScript(topic, type, duration, style, points);
+                    document.getElementById('scriptContent').innerHTML = script;
+                    document.getElementById('scriptSpinner').style.display = 'none';
+                    document.getElementById('scriptResult').style.display = 'block';
+                    document.getElementById('scriptResult').classList.add('animated-result');
+                }, 2000);
+            });
+            
+            function generateScript(topic, type, duration, style, points) {
+                // In a real app, this would call an AI API
+                const pointList = points ? points.split('\n').filter(p => p.trim()) : [];
+                const durationText = duration === '1' ? '1 minute' : `${duration} minutes`;
+                
+                let script = `<h4>Video Script: ${topic}</h4>`;
+                script += `<p><strong>Type:</strong> ${type} | <strong>Duration:</strong> ${durationText} | <strong>Style:</strong> ${style}</p>`;
+                
+                script += `<h5>Introduction:</h5>`;
+                if (style === 'formal') {
+                    script += `<p>"Good [morning/afternoon/evening] everyone. Today we'll be discussing ${topic.toLowerCase()}. This is an important topic because..."</p>`;
+                } else if (style === 'funny') {
+                    script += `<p>"What do you get when you cross ${topic.toLowerCase()} with a comedian? This video! But seriously folks..."</p>`;
+                } else {
+                    script += `<p>"Hey there! In this video, we're talking about ${topic.toLowerCase()}. Stick around because..."</p>`;
+                }
+                
+                if (pointList.length > 0) {
+                    script += `<h5>Main Content:</h5><ol>`;
+                    pointList.forEach((point, i) => {
+                        script += `<li><strong>${point}</strong><br>`;
+                        
+                        if (type === 'tutorial') {
+                            script += `"First, you'll want to... Then... Finally..."`;
+                        } else if (type === 'review') {
+                            script += `"What I liked about this was... However, one drawback is..."`;
+                        } else {
+                            script += `"This is important because..."`;
+                        }
+                        
+                        script += `</li>`;
+                    });
+                    script += `</ol>`;
+                } else {
+                    script += `<h5>Main Content:</h5><p>"Let's dive into the key aspects of ${topic.toLowerCase()}. First..."</p>`;
+                }
+                
+                script += `<h5>Conclusion:</h5>`;
+                script += `<p>"To wrap up... Don't forget to like and subscribe for more content on ${topic.toLowerCase()}!"</p>`;
+                
+                return script;
+            }
+            
+            document.getElementById('copyScript').addEventListener('click', function() {
+                const script = document.getElementById('scriptContent').textContent;
+                navigator.clipboard.writeText(script).then(() => {
+                    alert('Script copied to clipboard!');
+                });
+            });
+            
+            // AI Resume Builder
+            document.getElementById('resumeBuilder').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('resumeName').value;
+                const title = document.getElementById('resumeTitle').value;
+                const experience = document.getElementById('resumeExperience').value;
+                const education = document.getElementById('resumeEducation').value;
+                const skills = document.getElementById('resumeSkills').value;
+                const jobDesc = document.getElementById('resumeJobDesc').value;
+                
+                document.getElementById('resumeSpinner').style.display = 'block';
+                document.getElementById('resumeResult').style.display = 'none';
+                
+                setTimeout(() => {
+                    const resume = generateResume(name, title, experience, education, skills, jobDesc);
+                    document.getElementById('resumeContent').innerHTML = resume;
+                    document.getElementById('resumeSpinner').style.display = 'none';
+                    document.getElementById('resumeResult').style.display = 'block';
+                    document.getElementById('resumeResult').classList.add('animated-result');
+                }, 2000);
+            });
+            
+            function generateResume(name, title, experience, education, skills, jobDesc) {
+                // In a real app, this would call an AI API
+                const expList = experience.split('\n').filter(e => e.trim());
+                const eduList = education.split('\n').filter(e => e.trim());
+                const skillList = skills.split(',').map(s => s.trim());
+                
+                let resume = `<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px;">
+                    <h1 style="color: #4d44db; border-bottom: 2px solid #4d44db; padding-bottom: 10px;">${name}</h1>
+                    <h3 style="color: #666;">${title}</h3>`;
+                
+                if (expList.length > 0) {
+                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">PROFESSIONAL EXPERIENCE</h4>`;
+                    expList.forEach(exp => {
+                        const parts = exp.split(',');
+                        if (parts.length >= 3) {
+                            resume += `<p><strong>${parts[1].trim()}</strong> | ${parts[0].trim()} | ${parts[2].trim()}</p>`;
+                            resume += `<ul><li>Key achievement or responsibility</li><li>Another key achievement</li></ul>`;
+                        }
+                    });
+                }
+                
+                if (eduList.length > 0) {
+                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">EDUCATION</h4>`;
+                    eduList.forEach(edu => {
+                        const parts = edu.split(',');
+                        if (parts.length >= 2) {
+                            resume += `<p><strong>${parts[0].trim()}</strong> | ${parts[1].trim()}${parts.length > 2 ? ` | ${parts[2].trim()}` : ''}</p>`;
+                        }
+                    });
+                }
+                
+                if (skillList.length > 0) {
+                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">SKILLS</h4>`;
+                    resume += `<p>${skillList.join(' • ')}</p>`;
+                }
+                
+                if (jobDesc) {
+                    resume += `<h4 style="color: #4d44db; margin-top: 20px; border-bottom: 1px solid #ddd; padding-bottom: 5px;">TARGET POSITION</h4>`;
+                    resume += `<p>This resume has been tailored for opportunities in: ${jobDesc.substring(0, 100)}...</p>`;
+                }
+                
+                resume += `</div>`;
+                
+                return resume;
+            }
+            
+            document.getElementById('copyResume').addEventListener('click', function() {
+                const resume = document.getElementById('resumeContent').textContent;
+                navigator.clipboard.writeText(resume).then(() => {
+                    alert('Resume copied to clipboard!');
+                });
+            });
+            
+            document.getElementById('downloadResume').addEventListener('click', function() {
+                const { jsPDF } = window.jspdf;
+                const element = document.getElementById('resumeContent');
+                
+                html2canvas(element).then(canvas => {
+                    const imgData = canvas.toDataURL('image/png');
+                    const pdf = new jsPDF();
+                    const imgProps = pdf.getImageProperties(imgData);
+                    const pdfWidth = pdf.internal.pageSize.getWidth();
+                    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                    
+                    pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+                    pdf.save('resume.pdf');
+                });
+            });
+            
+            // FAQ Chatbot
+            const chatbotToggle = document.getElementById('chatbotToggle');
+            const chatbotContainer = document.getElementById('chatbotContainer');
+            const closeChatbot = document.getElementById('closeChatbot');
+            const chatbotMessages = document.getElementById('chatbotMessages');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const sendMessage = document.getElementById('sendMessage');
+            
+            chatbotToggle.addEventListener('click', function() {
+                chatbotContainer.style.display = chatbotContainer.style.display === 'block' ? 'none' : 'block';
+            });
+            
+            closeChatbot.addEventListener('click', function() {
+                chatbotContainer.style.display = 'none';
+            });
+            
+            function addMessage(message, isUser) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+                messageDiv.textContent = message;
+                chatbotMessages.appendChild(messageDiv);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }
+            
+            function handleUserMessage() {
+                const message = chatbotInput.value.trim();
+                if (message) {
+                    addMessage(message, true);
+                    chatbotInput.value = '';
+                    
+                    // Bot response
+                    setTimeout(() => {
+                        let response = "I'm sorry, I couldn't understand your question. Could you rephrase it?";
+                        
+                        if (message.toLowerCase().includes('tweet')) {
+                            response = "Our Tweet Generator helps you create engaging tweets. Just enter your topic, select a tone, and it will generate tweet ideas for you!";
+                        } else if (message.toLowerCase().includes('linkedin') || message.toLowerCase().includes('bio')) {
+                            response = "The LinkedIn Bio Creator generates professional bios based on your experience and skills. Fill in your details and it will create a polished bio for your profile.";
+                        } else if (message.toLowerCase().includes('video') || message.toLowerCase().includes('script')) {
+                            response = "Our Video Script Generator creates complete scripts for your videos. Specify the topic, duration, and style, and it will generate a structured script.";
+                        } else if (message.toLowerCase().includes('resume')) {
+                            response = "The Resume Builder helps you create professional resumes. Enter your work experience, education, and skills, and it will format a resume for you.";
+                        } else if (message.toLowerCase().includes('free')) {
+                            response = "Yes! All our tools are completely free to use with no hidden costs or registration required.";
+                        } else if (message.toLowerCase().includes('hello') || message.toLowerCase().includes('hi')) {
+                            response = "Hello! How can I help you with our AI tools today?";
+                        }
+                        
+                        addMessage(response, false);
+                    }, 500);
+                }
+            }
+            
+            sendMessage.addEventListener('click', handleUserMessage);
+            
+            chatbotInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    handleUserMessage();
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
